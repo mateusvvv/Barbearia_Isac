@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Barbearia Isac</title>
+
+    <!-- Responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>BARBEARIA ISAC</h1>
+        <p>Estilo, tradição e atitude</p>
+    </header>
+
+    <!-- SERVIÇOS -->
+    <section class="servicos">
+        <h2>Nossos Serviços</h2>
+
+        <div class="card">
+            <h3>✂️ Corte de Cabelo</h3>
+            <p>Corte moderno e tradicional</p>
+            <button onclick="agendar('corte de cabelo')">
+                Agendar pelo WhatsApp
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>🧔 Barba</h3>
+            <p>Barba desenhada e alinhada</p>
+            <button onclick="agendar('barba')">
+                Agendar pelo WhatsApp
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>🔥 Corte + Barba</h3>
+            <p>Pacote completo</p>
+            <button onclick="agendar('corte e barba')">
+                Agendar pelo WhatsApp
+            </button>
+        </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="mapa">
+        <h2>📍 Onde estamos</h2>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d353.39035254744834!2d-36.43844973526021!3d-8.339314035703355!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1768148377508!5m2!1spt-BR!2sbr"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <a 
+            href="https://www.google.com/maps?q=-8.339314,-36.438449"
+            target="_blank"
+            class="btn-mapa">
+            Abrir no Google Maps
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            📍 Barbearia Isac • Atendimento com hora marcada Developed by Lucas • 2026
+        </p>
+    </footer>
+
+    <!-- WHATSAPP FLUTUANTE -->
+    <a 
+        href="#"
+        class="whatsapp-float"
+        onclick="agendar('informações')"
+        title="Fale conosco no WhatsApp">
+        💬
+    </a>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
